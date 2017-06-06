@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pip 使用国内源</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777;
+        background-color: white;
+      }
+      .container {
+        width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .post {
+        font-family: Georgia, "Times New Roman", Times, "SimSun", serif;
+        position: relative;
+        padding: 70px;
+        bottom: 0;
+        overflow-y: auto;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        color: #515151;
+      }
+
+      .post h1{
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-bottom: 40px;
+        color: inherit;
+      }
+
+      .post p {
+        margin: 0 0 35px 0;
+      }
+
+      .post img {
+        border: 1px solid #D9D9D9;
+      }
+
+      .post a {
+        color: #28A1C5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1 class="title">pip 使用国内源</h1>
+        <div class="show-content">
+          <p>###国内源：</p><p>###新版ubuntu要求使用https源，要注意。<br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 清华：<a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 阿里云：<a href="http://mirrors.aliyun.com/pypi/simple/" target="_blank">http://mirrors.aliyun.com/pypi/simple/</a><br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 中国科技大学 <a href="https://pypi.mirrors.ustc.edu.cn/simple/" target="_blank">https://pypi.mirrors.ustc.edu.cn/simple/</a><br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 华中理工大学：<a href="http://pypi.hustunique.com/" target="_blank">http://pypi.hustunique.com/</a><br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 山东理工大学：<a href="http://pypi.sdutlinux.org/" target="_blank">http://pypi.sdutlinux.org/</a> <br>&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp; 豆瓣：<a href="http://pypi.douban.com/simple/" target="_blank">http://pypi.douban.com/simple/</a></p><p>###临时使用：</p><p>&nbsp;&nbsp;&nbsp; 可以在使用pip的时候加参数-i <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank">https://pypi.tuna.tsinghua.edu.cn/simple</a></p><p>&nbsp;&nbsp;&nbsp; 例如：<br>&nbsp;&nbsp;&nbsp; pip install -i <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank">https://pypi.tuna.tsinghua.edu.cn/simple</a> pyspider<br>&nbsp;&nbsp;&nbsp; 这样就会从清华这边的镜像去安装pyspider库。<br>&nbsp;</p><p>###永久修改，一劳永逸：</p><p>&gt;Linux下，修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件。文件夹要加“.”，表示是隐藏文件夹)</p><p>###内容如下：</p><p>&nbsp;&nbsp;&nbsp; [global]<br>&nbsp;&nbsp;&nbsp; index-url = <a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>&nbsp;&nbsp;&nbsp; [install]<br>&nbsp;&nbsp;&nbsp; trusted-host=mirrors.aliyun.com<br>&gt;windows下，直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件pip.ini。内容同上<br></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
